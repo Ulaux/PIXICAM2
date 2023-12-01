@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html class="html" lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Permissions-Policy" content="directives">
+    <meta name="viewport" content="width=device-width, initial-scale=0.23, maximum-scale=10">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="/CSS/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin="">
+    </script>
+    <title>PixIcam</title>
+  </head>
+  <header>
+    <h1 class="title">- PixIcam Wars -</h1>
+    <h1 class="title underTitle">Place your Pixel</h1>
+  </header>
+  <body>
+    <div id="Container">
+      <div id="canvaBox">
+        <canvas id="canvas"></canvas>
+      </div>
+    </div>
+    <div id="colorChoice">
+     <!--  <input type="color" id="colorSelector" class="Selector resizeTool"> -->
+    </div>
+    <!-- POP-UP-->
+    <div id="Popup-Overlay">
+      <div class="Popup-Content">
+        <h1>-------Welcome-------</h1>
+        <h4> Here is the first pixel place developed for the ICAM Student in HTML/CSS, javascript and solidity with a DataBase made thanks to the blockchain we've create for this project...
+             <br>
+             <br>
+              Axel MARSAQ Jonathan JARNO Mayol HULAUX and Hugo VINUSA
+        </h4>
+        <h2>-------Control------- </h2>
+        <h4 id="scroll-advice"> Use Scroll : to  zoom on the board</h4>
+        <h4 id="rightClick-advice"> Use Right click : to drag or move on the board</h4>
+        <h4 id="leftClick-advice"> Use Left click : to place your Pixel</h4>
+        <div id="Popup-button">
+        <button id="connectBtn" >Connect to MetaMask</button>
+        </div>
+      </div>
+    </div>
+    <!-- POP-UP-->
+    
+    <!-- Blockchain part
+     un bouton pour chaque fct de notre smart contract et un input lorque nécéssaire (store and take fct) et un pour se connecter à metamask-->
+      <div id="outputConnexion"></div><br>
+
+      <button class="block" id="ownerBtn">Add an address as owner</button>
+      <input class="block" id="ownerInp"><br>
+
+      <button class="block" id="userBtn">Add myself as a user</button><br>
+
+      <button class="block" id="watchBtn">Watch</button><br>
+
+      <p class="block">Current credit:  </p><div id="outputWatch"></div><br>
+
+      <button class="block" id="storeBtn">Store</button>
+      <input class="block" id="storeInp"><br>
+
+      <button class="block" id="takeBtn">Take</button>
+      <input class="block" id="takeInp"><br>
+
+      <button class="block" id="setPixelBtn">Set a pixel</button><br>
+      <p class="block">X axis : </p><input class="block" id="setXIndexInp"><br>
+      <p class="block">Y axis : </p><input class="block" id="setYIndexInp"><br>
+      <p class="block">Pixel value : </p><input class="block" id="setValueInp"><br>
+
+      <button class="block" id="getPixelBtn">Get a pixel</button><br>
+      <p class="block">X axis : </p><input class="block" id="getXIndexInp"><br>
+      <p class="block">Y axis : </p><input class="block" id="getYIndexInp"><br>
+      <p class="block">Pixel value: </p><div id="outputPixel"></div><br>
+
+      <button class="block" id="setArrayBtn">Set the array to a specific value</button>
+      <input class="block" id="setArrayInp"><br>
+
+     <!--Blockchain part -->
+  </body>
+  <footer>
+     <script src="index.js" type="module"></script>
+    </div>
+  </footer>
+</html>
